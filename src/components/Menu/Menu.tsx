@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/Ai'
-
 import { Filter } from '../Filter'
 
 interface MenuProps {}
@@ -54,29 +52,23 @@ const SubMenuButton = styled.button`
   border: none;
 `
 
-const StyledArrowUpIcon = styled(AiOutlineArrowUp)`
-  margin: 0 4px;
-`
-
-const StyledArrowDownIcon = styled(AiOutlineArrowDown)``
-
 export const Menu = (props: MenuProps) => {
-  const SubMenu = () => {
-    return (
-      <StyledSubMenu>
-        <SubMenuButton type="button" aria-label="Name">
-          <span>Name</span>
-          <StyledArrowUpIcon />
-        </SubMenuButton>
-        <SubMenuButton type="button" aria-label="Size">
-          <span>Size</span>
-        </SubMenuButton>
-        <SubMenuButton type="button" aria-label="Date">
-          <span>Date</span>
-        </SubMenuButton>
-      </StyledSubMenu>
-    )
-  }
+  // const SubMenu = () => {
+  //   return (
+  //     <StyledSubMenu>
+  //       <SubMenuButton type="button" aria-label="Name">
+  //         <span>Name</span>
+  //         <StyledArrowUpIcon />
+  //       </SubMenuButton>
+  //       <SubMenuButton type="button" aria-label="Size">
+  //         <span>Size</span>
+  //       </SubMenuButton>
+  //       <SubMenuButton type="button" aria-label="Date">
+  //         <span>Date</span>
+  //       </SubMenuButton>
+  //     </StyledSubMenu>
+  //   )
+  // }
 
   return (
     <MenuWrapper>
@@ -90,7 +82,7 @@ export const Menu = (props: MenuProps) => {
           <Filter />
         </FilterWrapper>
       </StyledMenu>
-      <SubMenu />
+      {/* <SubMenu /> */}
     </MenuWrapper>
   )
 }

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { DataFile } from '../types'
 
 import { Menu } from '../Menu'
+import { Table } from '../Table'
 
 export interface DashboardProps {
   data: DataFile[]
@@ -19,11 +20,9 @@ const StyledDashboard = styled.div`
   min-width: 320px;
   min-height: 660px;
   border-radius: 20px;
-  -moz-box-shadow: 3px 3px 0px 0px
-    ${(props) => `${props.theme.colors.tertiary}`};
-  -webkit-box-shadow: 3px 3px 0px 0px
-    ${(props) => `${props.theme.colors.tertiary}`};
-  box-shadow: 3px 3px 0px 0px ${(props) => `${props.theme.colors.tertiary}`};
+  -moz-box-shadow: 3px 3px 0px 0px ${(props) => `${props.theme.colors.grey}`};
+  -webkit-box-shadow: 3px 3px 0px 0px ${(props) => `${props.theme.colors.grey}`};
+  box-shadow: 3px 3px 0px 0px ${(props) => `${props.theme.colors.grey}`};
   background: ${(props) => `${props.theme.colors.secondary}`};
 `
 
@@ -33,7 +32,9 @@ export const Dashboard = (props: DashboardProps) => {
   return (
     <StyledDashboard>
       <Menu>Test</Menu>
-      <StyledContent>Test</StyledContent>
+      <StyledContent>
+        <Table data={props.data} />
+      </StyledContent>
     </StyledDashboard>
   )
 }

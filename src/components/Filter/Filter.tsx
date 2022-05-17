@@ -40,7 +40,7 @@ const StyledInput = styled.input`
   padding-left: 4px;
   background: ${(props) => `${props.theme.colors.secondary}`};
   outline: none;
-  border-left: 1px solid ${(props) => `${props.theme.colors.tertiary}`};
+  border-left: 1px solid ${(props) => `${props.theme.colors.grey}`};
 `
 
 export const Filter = (props: FilterProps) => {
