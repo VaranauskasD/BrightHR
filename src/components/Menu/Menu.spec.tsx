@@ -1,5 +1,3 @@
-import { screen } from '@testing-library/react'
-
 import { customRender as render } from '../../utils/test'
 import { Menu } from './Menu'
 

@@ -85,20 +85,20 @@ const StyledArrowDownIcon = styled(AiOutlineArrowDown)`
 export const Table = (props: TableProps) => {
   const [tableData, setTableData] = useState<DataFile[]>([])
   const [sortKeys, setSortKeys] = useState<number[]>([1, 0, 0, 0])
-  const [nameAscending, setNameAscending] = useState<boolean>(true)
-  const [typeAscending, setTypeAscending] = useState<boolean>(true)
-  const [dateAscending, setDateAscending] = useState<boolean>(true)
-  const [sizeAscending, setSizeAscending] = useState<boolean>(true)
+  const [nameDescending, setNameDescending] = useState<boolean>(true)
+  const [typeDescending, setTypeDescending] = useState<boolean>(true)
+  const [dateDescending, setDateDescending] = useState<boolean>(true)
+  const [sizeDescending, setSizeDescending] = useState<boolean>(true)
 
   useEffect(() => {
     sortByName(props.data, true)
     setTableData(props.data)
   }, [])
 
-  const sortByName = (data: DataFile[], ascending: boolean) => {
+  const sortByName = (data: DataFile[], descending: boolean) => {
     const sortData = data
 
-    ascending
+    descending
       ? sortData.sort((file_one, file_two) =>
           file_one.name.localeCompare(file_two.name)
         )
@@ -107,17 +107,17 @@ export const Table = (props: TableProps) => {
         )
 
     setTableData(sortData)
-    setNameAscending(!nameAscending)
+    setNameDescending(!nameDescending)
 
     const keys = Array(4).fill(0)
     keys[0] = 1
     setSortKeys(keys)
   }
 
-  const sortByType = (data: DataFile[], ascending: boolean) => {
+  const sortByType = (data: DataFile[], descending: boolean) => {
     const sortData = data
 
-    ascending
+    descending
       ? sortData.sort((file_one, file_two) => {
           if (file_one.type === 'folder' && file_two.type !== 'folder')
             return -1
@@ -132,17 +132,17 @@ export const Table = (props: TableProps) => {
         })
 
     setTableData(data)
-    setTypeAscending(!typeAscending)
+    setTypeDescending(!typeDescending)
 
     const keys = Array(4).fill(0)
     keys[1] = 1
     setSortKeys(keys)
   }
 
-  const sortByDate = (data: DataFile[], ascending: boolean) => {
+  const sortByDate = (data: DataFile[], descending: boolean) => {
     const sortData = data
 
-    ascending
+    descending
       ? sortData.sort((file_one, file_two) => {
           if (!file_one.added) return 1
           if (!file_two.added) return -1
@@ -155,17 +155,17 @@ export const Table = (props: TableProps) => {
         })
 
     setTableData(data)
-    setDateAscending(!dateAscending)
+    setDateDescending(!dateDescending)
 
     const keys = Array(4).fill(0)
     keys[2] = 1
     setSortKeys(keys)
   }
 
-  const sortBySize = (data: DataFile[], ascending: boolean) => {
+  const sortBySize = (data: DataFile[], descending: boolean) => {
     const sortData = data
 
-    ascending
+    descending
       ? sortData.sort((file_one, file_two) => {
           if (!file_one.files) return 1
           if (!file_two.files) return -1
@@ -178,7 +178,7 @@ export const Table = (props: TableProps) => {
         })
 
     setTableData(data)
-    setSizeAscending(!sizeAscending)
+    setSizeDescending(!sizeDescending)
 
     const keys = Array(4).fill(0)
     keys[3] = 1
@@ -187,8 +187,12 @@ export const Table = (props: TableProps) => {
 
   const dataRow = (data: DataFile, key: number) => {
     return (
-      <StyledTableBodyRow key={`${data.name}-${key}`} $key={key}>
-        <StyledTableCell>
+      <StyledTableBodyRow
+        key={`${data.name}-${key}`}
+        $key={key}
+        data-testid={`${data.name}-${key}`}
+      >
+        <StyledTableCell data-testid={`cell-${data.name}-${key}`}>
           {data.name ? data.name : 'Missing Name'}
         </StyledTableCell>
         <StyledTableCell>
@@ -213,24 +217,25 @@ export const Table = (props: TableProps) => {
             id="ColName"
             aria-sort={
               sortKeys[0]
-                ? nameAscending
-                  ? 'ascending'
-                  : 'descending'
+                ? nameDescending
+                  ? 'descending'
+                  : 'ascending'
                 : 'none'
             }
           >
             <TableButton
               type="button"
               id="ColNameSortButton"
+              data-testid="ColNameSortButton"
               aria-label="Sort by name"
-              onClick={() => sortByName(tableData, nameAscending)}
+              onClick={() => sortByName(tableData, nameDescending)}
             >
               <span>Name</span>
               {sortKeys[0] ? (
-                nameAscending ? (
-                  <StyledArrowUpIcon aria-hidden="true" />
-                ) : (
+                nameDescending ? (
                   <StyledArrowDownIcon aria-hidden="true" />
+                ) : (
+                  <StyledArrowUpIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
@@ -241,24 +246,25 @@ export const Table = (props: TableProps) => {
             id="ColType"
             aria-sort={
               sortKeys[1]
-                ? typeAscending
-                  ? 'ascending'
-                  : 'descending'
+                ? typeDescending
+                  ? 'descending'
+                  : 'ascending'
                 : 'none'
             }
           >
             <TableButton
               type="button"
               id="ColTypeSortButton"
+              data-testid="ColTypeSortButton"
               aria-label="Sort by type"
-              onClick={() => sortByType(tableData, typeAscending)}
+              onClick={() => sortByType(tableData, typeDescending)}
             >
               <span>Type</span>
               {sortKeys[1] ? (
-                typeAscending ? (
-                  <StyledArrowUpIcon aria-hidden="true" />
-                ) : (
+                typeDescending ? (
                   <StyledArrowDownIcon aria-hidden="true" />
+                ) : (
+                  <StyledArrowUpIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
@@ -269,24 +275,25 @@ export const Table = (props: TableProps) => {
             id="ColDate"
             aria-sort={
               sortKeys[2]
-                ? dateAscending
-                  ? 'ascending'
-                  : 'descending'
+                ? dateDescending
+                  ? 'descending'
+                  : 'ascending'
                 : 'none'
             }
           >
             <TableButton
               type="button"
               id="ColDateSortButton"
+              data-testid="ColDateSortButton"
               aria-label="Sort by date"
-              onClick={() => sortByDate(tableData, dateAscending)}
+              onClick={() => sortByDate(tableData, dateDescending)}
             >
               <span>Date</span>
               {sortKeys[2] ? (
-                dateAscending ? (
-                  <StyledArrowUpIcon aria-hidden="true" />
-                ) : (
+                dateDescending ? (
                   <StyledArrowDownIcon aria-hidden="true" />
+                ) : (
+                  <StyledArrowUpIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
@@ -297,24 +304,25 @@ export const Table = (props: TableProps) => {
             id="ColSize"
             aria-sort={
               sortKeys[3]
-                ? sizeAscending
-                  ? 'ascending'
-                  : 'descending'
+                ? sizeDescending
+                  ? 'descending'
+                  : 'ascending'
                 : 'none'
             }
           >
             <TableButton
               type="button"
               id="ColSizeSortButton"
+              data-testid="ColSizeSortButton"
               aria-label="Sort by size"
-              onClick={() => sortBySize(tableData, sizeAscending)}
+              onClick={() => sortBySize(tableData, sizeDescending)}
             >
               <span>Size</span>
               {sortKeys[3] ? (
-                sizeAscending ? (
-                  <StyledArrowUpIcon aria-hidden="true" />
-                ) : (
+                sizeDescending ? (
                   <StyledArrowDownIcon aria-hidden="true" />
+                ) : (
+                  <StyledArrowUpIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
@@ -323,7 +331,7 @@ export const Table = (props: TableProps) => {
           </StyledTableHeader>
         </StyledTableHeadRow>
       </StyledTableHead>
-      <StyledTableBody>
+      <StyledTableBody data-testid="tablebody">
         {tableData.map((file, key) => dataRow(file, key))}
       </StyledTableBody>
     </StyledTable>

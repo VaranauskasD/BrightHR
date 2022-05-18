@@ -67,13 +67,14 @@ exports[`Dashboard renders correctly 1`] = `
             class="sc-iqcoie bWHMrz"
           >
             <th
-              aria-sort="descending"
+              aria-sort="ascending"
               class="sc-evZas cyKeCB"
               id="ColName"
             >
               <button
                 aria-label="Sort by name"
                 class="sc-breuTD leTuEk"
+                data-testid="ColNameSortButton"
                 id="ColNameSortButton"
                 type="button"
               >
@@ -82,7 +83,7 @@ exports[`Dashboard renders correctly 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  class="sc-fEOsli lmlkec"
+                  class="sc-fnykZs ghgjot"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -92,7 +93,7 @@ exports[`Dashboard renders correctly 1`] = `
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M862 465.3h-81c-4.6 0-9 2-12.1 5.5L550 723.1V160c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v563.1L255.1 470.8c-3-3.5-7.4-5.5-12.1-5.5h-81c-6.8 0-10.5 8.1-6 13.2L487.9 861a31.96 31.96 0 0 0 48.3 0L868 478.5c4.5-5.2.8-13.2-6-13.2z"
+                    d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
                   />
                 </svg>
               </button>
@@ -105,6 +106,7 @@ exports[`Dashboard renders correctly 1`] = `
               <button
                 aria-label="Sort by type"
                 class="sc-breuTD leTuEk"
+                data-testid="ColTypeSortButton"
                 id="ColTypeSortButton"
                 type="button"
               >
@@ -121,6 +123,7 @@ exports[`Dashboard renders correctly 1`] = `
               <button
                 aria-label="Sort by date"
                 class="sc-breuTD leTuEk"
+                data-testid="ColDateSortButton"
                 id="ColDateSortButton"
                 type="button"
               >
@@ -137,6 +140,7 @@ exports[`Dashboard renders correctly 1`] = `
               <button
                 aria-label="Sort by size"
                 class="sc-breuTD leTuEk"
+                data-testid="ColSizeSortButton"
                 id="ColSizeSortButton"
                 type="button"
               >
@@ -149,12 +153,41 @@ exports[`Dashboard renders correctly 1`] = `
         </thead>
         <tbody
           class="sc-ksZaOG cCLelE"
+          data-testid="tablebody"
         >
           <tr
             class="sc-crXcEl bcEKsS"
+            data-testid="Amplified-0"
           >
             <td
               class="sc-hAZoDl csgbVY"
+              data-testid="cell-Amplified-0"
+            >
+              Amplified
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2022-02-07
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl hjKgFN"
+            data-testid="Cost centres-1"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Cost centres-1"
             >
               Cost centres
             </td>
@@ -175,10 +208,12 @@ exports[`Dashboard renders correctly 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-crXcEl hjKgFN"
+            class="sc-crXcEl bcEKsS"
+            data-testid="Employee Handbook-2"
           >
             <td
               class="sc-hAZoDl csgbVY"
+              data-testid="cell-Employee Handbook-2"
             >
               Employee Handbook
             </td>
@@ -199,10 +234,38 @@ exports[`Dashboard renders correctly 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-crXcEl bcEKsS"
+            class="sc-crXcEl hjKgFN"
+            data-testid="Executive Handbook-3"
           >
             <td
               class="sc-hAZoDl csgbVY"
+              data-testid="cell-Executive Handbook-3"
+            >
+              Executive Handbook
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2012-04-03
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl bcEKsS"
+            data-testid="Expenses-4"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Expenses-4"
             >
               Expenses
             </td>
@@ -224,9 +287,63 @@ exports[`Dashboard renders correctly 1`] = `
           </tr>
           <tr
             class="sc-crXcEl hjKgFN"
+            data-testid="Human Resources Handbook-5"
           >
             <td
               class="sc-hAZoDl csgbVY"
+              data-testid="cell-Human Resources Handbook-5"
+            >
+              Human Resources Handbook
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2014-02-06
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl bcEKsS"
+            data-testid="Marketing Handbook-6"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Marketing Handbook-6"
+            >
+              Marketing Handbook
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2015-02-06
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl hjKgFN"
+            data-testid="Misc-7"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Misc-7"
             >
               Misc
             </td>
@@ -243,14 +360,42 @@ exports[`Dashboard renders correctly 1`] = `
             <td
               class="sc-hAZoDl csgbVY"
             >
-              2
+              3
             </td>
           </tr>
           <tr
             class="sc-crXcEl bcEKsS"
+            data-testid="Networks Handbook-8"
           >
             <td
               class="sc-hAZoDl csgbVY"
+              data-testid="cell-Networks Handbook-8"
+            >
+              Networks Handbook
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2013-02-14
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl hjKgFN"
+            data-testid="Public Holiday policy-9"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Public Holiday policy-9"
             >
               Public Holiday policy
             </td>
@@ -263,6 +408,162 @@ exports[`Dashboard renders correctly 1`] = `
               class="sc-hAZoDl csgbVY"
             >
               2016-12-06
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl bcEKsS"
+            data-testid="Public Holiday policy 2-10"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Public Holiday policy 2-10"
+            >
+              Public Holiday policy 2
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2016-12-07
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl hjKgFN"
+            data-testid="Public Holiday policy 3-11"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Public Holiday policy 3-11"
+            >
+              Public Holiday policy 3
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2016-12-08
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl bcEKsS"
+            data-testid="Public Holiday policy final-12"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Public Holiday policy final-12"
+            >
+              Public Holiday policy final
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2016-12-09
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl hjKgFN"
+            data-testid="Setup Guide-13"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Setup Guide-13"
+            >
+              Setup Guide
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2017-07-02
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl bcEKsS"
+            data-testid="Statements-14"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Statements-14"
+            >
+              Statements
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2017-02-15
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+          <tr
+            class="sc-crXcEl hjKgFN"
+            data-testid="Zen-15"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Zen-15"
+            >
+              Zen
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              zsv
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2011-05-16
             </td>
             <td
               class="sc-hAZoDl csgbVY"

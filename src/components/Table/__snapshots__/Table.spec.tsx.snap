@@ -19,6 +19,2118 @@ exports[`Table renders correctly 1`] = `
         class="sc-hKMtZM cVghEq"
       >
         <th
+          aria-sort="ascending"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-papXJ LTbNF"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Amplified-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-0"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Cost centres-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-1"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-2"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-3"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-4"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Human Resources Handbook-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-5"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Marketing Handbook-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-6"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-7"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-8"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-9"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-10"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-11"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-12"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-13"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-14"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-15"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by date ascending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="ascending"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-papXJ LTbNF"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Zen-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-0"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-1"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-2"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Human Resources Handbook-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-3"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Marketing Handbook-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-4"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Cost centres-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-5"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-6"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 2-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-7"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 3-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-8"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy final-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-9"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-10"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Statements-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-11"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Setup Guide-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-12"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Amplified-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-13"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-14"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-15"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by date descending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="descending"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-jqUVSM gBWJPk"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M862 465.3h-81c-4.6 0-9 2-12.1 5.5L550 723.1V160c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v563.1L255.1 470.8c-3-3.5-7.4-5.5-12.1-5.5h-81c-6.8 0-10.5 8.1-6 13.2L487.9 861a31.96 31.96 0 0 0 48.3 0L868 478.5c4.5-5.2.8-13.2-6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Amplified-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-0"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-1"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-2"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Employee Handbook-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-3"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-4"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-5"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-6"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-7"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Cost centres-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-8"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Marketing Handbook-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-9"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Human Resources Handbook-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-10"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Networks Handbook-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-11"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Executive Handbook-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-12"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-13"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-14"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-15"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by name ascending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="ascending"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-papXJ LTbNF"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Amplified-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-0"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Cost centres-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-1"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-2"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-3"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-4"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Human Resources Handbook-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-5"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Marketing Handbook-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-6"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-7"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-8"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-9"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-10"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-11"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-12"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-13"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-14"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-15"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by name descending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
           aria-sort="descending"
           class="sc-jSMfEi rZCU"
           id="ColName"
@@ -26,6 +2138,7 @@ exports[`Table renders correctly 1`] = `
           <button
             aria-label="Sort by name"
             class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
             id="ColNameSortButton"
             type="button"
           >
@@ -57,6 +2170,7 @@ exports[`Table renders correctly 1`] = `
           <button
             aria-label="Sort by type"
             class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
             id="ColTypeSortButton"
             type="button"
           >
@@ -73,6 +2187,7 @@ exports[`Table renders correctly 1`] = `
           <button
             aria-label="Sort by date"
             class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
             id="ColDateSortButton"
             type="button"
           >
@@ -89,6 +2204,7 @@ exports[`Table renders correctly 1`] = `
           <button
             aria-label="Sort by size"
             class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
             id="ColSizeSortButton"
             type="button"
           >
@@ -101,24 +2217,27 @@ exports[`Table renders correctly 1`] = `
     </thead>
     <tbody
       class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
     >
       <tr
         class="sc-eCYdqJ bmVhaN"
+        data-testid="Zen-0"
       >
         <td
           class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-0"
         >
-          Cost centres
+          Zen
         </td>
         <td
           class="sc-ftvSup jXKhkW"
         >
-          csv
+          zsv
         </td>
         <td
           class="sc-ftvSup jXKhkW"
         >
-          2016-08-12
+          2011-05-16
         </td>
         <td
           class="sc-ftvSup jXKhkW"
@@ -128,9 +2247,323 @@ exports[`Table renders correctly 1`] = `
       </tr>
       <tr
         class="sc-eCYdqJ hcWJXS"
+        data-testid="Statements-1"
       >
         <td
           class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-1"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Setup Guide-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-2"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy final-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-3"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 3-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-4"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 2-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-5"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-6"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Networks Handbook-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-7"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Misc-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-8"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Marketing Handbook-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-9"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Human Resources Handbook-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-10"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Expenses-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-11"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Executive Handbook-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-12"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Employee Handbook-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-13"
         >
           Employee Handbook
         </td>
@@ -152,9 +2585,175 @@ exports[`Table renders correctly 1`] = `
       </tr>
       <tr
         class="sc-eCYdqJ bmVhaN"
+        data-testid="Cost centres-14"
       >
         <td
           class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-14"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Amplified-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-15"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by size ascending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="ascending"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-papXJ LTbNF"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-0"
         >
           Expenses
         </td>
@@ -176,11 +2775,541 @@ exports[`Table renders correctly 1`] = `
       </tr>
       <tr
         class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-1"
       >
         <td
           class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-1"
         >
           Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Amplified-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-2"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Cost centres-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-3"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-4"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-5"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Human Resources Handbook-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-6"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Marketing Handbook-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-7"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-8"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-9"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-10"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-11"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-12"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-13"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-14"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-15"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by size descending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="descending"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-jqUVSM gBWJPk"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M862 465.3h-81c-4.6 0-9 2-12.1 5.5L550 723.1V160c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v563.1L255.1 470.8c-3-3.5-7.4-5.5-12.1-5.5h-81c-6.8 0-10.5 8.1-6 13.2L487.9 861a31.96 31.96 0 0 0 48.3 0L868 478.5c4.5-5.2.8-13.2-6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Misc-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-0"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Expenses-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-1"
+        >
+          Expenses
         </td>
         <td
           class="sc-ftvSup jXKhkW"
@@ -200,9 +3329,193 @@ exports[`Table renders correctly 1`] = `
       </tr>
       <tr
         class="sc-eCYdqJ bmVhaN"
+        data-testid="Amplified-2"
       >
         <td
           class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-2"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Cost centres-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-3"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-4"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-5"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Human Resources Handbook-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-6"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Marketing Handbook-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-7"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-8"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-9"
         >
           Public Holiday policy
         </td>
@@ -215,6 +3528,1218 @@ exports[`Table renders correctly 1`] = `
           class="sc-ftvSup jXKhkW"
         >
           2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-10"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-11"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-12"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-13"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-14"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-15"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by type ascending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="ascending"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-papXJ LTbNF"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-0"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-1"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Cost centres-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-2"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Amplified-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-3"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-4"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-5"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Human Resources Handbook-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-6"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Marketing Handbook-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-7"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-8"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-9"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-10"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-11"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-12"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-13"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-14"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-15"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`Table sorts by type descending 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="ascending"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColNameSortButton"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-papXJ LTbNF"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColTypeSortButton"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColDateSortButton"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            data-testid="ColSizeSortButton"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+      data-testid="tablebody"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Amplified-0"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Amplified-0"
+        >
+          Amplified
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2022-02-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Cost centres-1"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Cost centres-1"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Employee Handbook-2"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Employee Handbook-2"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Executive Handbook-3"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Executive Handbook-3"
+        >
+          Executive Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2012-04-03
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Expenses-4"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Expenses-4"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Human Resources Handbook-5"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Human Resources Handbook-5"
+        >
+          Human Resources Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2014-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Marketing Handbook-6"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Marketing Handbook-6"
+        >
+          Marketing Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2015-02-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Misc-7"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Misc-7"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          3
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Networks Handbook-8"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Networks Handbook-8"
+        >
+          Networks Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2013-02-14
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy-9"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy-9"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy 2-10"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 2-10"
+        >
+          Public Holiday policy 2
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-07
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Public Holiday policy 3-11"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy 3-11"
+        >
+          Public Holiday policy 3
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-08
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Public Holiday policy final-12"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Public Holiday policy final-12"
+        >
+          Public Holiday policy final
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-09
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Setup Guide-13"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Setup Guide-13"
+        >
+          Setup Guide
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-07-02
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+        data-testid="Statements-14"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Statements-14"
+        >
+          Statements
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-02-15
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+        data-testid="Zen-15"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+          data-testid="cell-Zen-15"
+        >
+          Zen
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          zsv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2011-05-16
         </td>
         <td
           class="sc-ftvSup jXKhkW"
