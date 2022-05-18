@@ -134,7 +134,6 @@ const StyledArrowDownIcon = styled(AiOutlineArrowDown)`
 
 export const Table = (props: TableProps) => {
   const [tableData, setTableData] = useState<DataFile[]>([])
-  const [currentFolderData, setCurrentFolderData] = useState<DataFile[]>([])
   const [sortKeys, setSortKeys] = useState<number[]>([1, 0, 0, 0])
   const [nameDescending, setNameDescending] = useState<boolean>(true)
   const [typeDescending, setTypeDescending] = useState<boolean>(true)
@@ -143,12 +142,11 @@ export const Table = (props: TableProps) => {
 
   useEffect(() => {
     sortByName(props.data, true)
-    setCurrentFolderData(props.data)
     setTableData(props.data)
   }, [])
 
   useEffect(() => {
-    const filteredData = currentFolderData.filter((file) =>
+    const filteredData = props.data.filter((file) =>
       file.name.toLocaleLowerCase().includes(props.filter || '')
     )
     sortByName(filteredData, true)
@@ -164,8 +162,6 @@ export const Table = (props: TableProps) => {
     const subFolderData = tableData.find(
       (file) => file.name === folderName
     )?.files
-
-    setCurrentFolderData(subFolderData || [])
 
     setTableData(subFolderData || [])
   }
@@ -269,7 +265,10 @@ export const Table = (props: TableProps) => {
       >
         <StyledTableCell data-testid={`cell-${data.name}-${key}`}>
           {data.type === 'folder' ? (
-            <TableButton onClick={(event) => handleFolderClick(event)}>
+            <TableButton
+              onClick={(event) => handleFolderClick(event)}
+              data-testid={`folder-button-${key}`}
+            >
               <StyledFolderIcon aria-hidden="true" />
               <span>{data.name ? data.name : 'Missing Name'}</span>
             </TableButton>
