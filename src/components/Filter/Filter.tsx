@@ -13,7 +13,7 @@ const FilterWrapper = styled.div`
   background: ${(props) => `${props.theme.colors.secondary}`};
   border-radius: 24px;
 
-  :focus {
+  :focus-within {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   }
 `

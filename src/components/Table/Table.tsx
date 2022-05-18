@@ -149,7 +149,6 @@ export const Table = (props: TableProps) => {
     const filteredData = props.data.filter((file) =>
       file.name.toLocaleLowerCase().includes(props.filter || '')
     )
-    sortByName(filteredData, true)
     setTableData(filteredData)
   }, [props.filter])
 

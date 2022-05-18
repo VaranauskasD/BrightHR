@@ -36,6 +36,7 @@ export const Dashboard = (props: DashboardProps) => {
 
   const handleFilterChange = (event: ChangeEvent<HTMLInputElement>) => {
     setFilter(event.target.value.toLocaleLowerCase())
+    event.preventDefault()
   }
 
   return (
