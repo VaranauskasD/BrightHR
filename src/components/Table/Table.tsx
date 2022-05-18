@@ -50,6 +50,15 @@ const StyledTableHeader = styled.th`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  :focus-within {
+    box-shadow: 0 0 4px black;
+  }
+
+  :hover {
+    background: ${(props) => `${props.theme.colors.primary}`};
+    box-shadow: 0 0 4px black;
+  }
 `
 
 const TableButton = styled.button`
@@ -59,6 +68,7 @@ const TableButton = styled.button`
   justify-content: space-between;
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
 `
 

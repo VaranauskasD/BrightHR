@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, ChangeEvent } from 'react'
 import styled from 'styled-components'
 
 import { FiFilter } from 'react-icons/Fi'
@@ -13,8 +13,9 @@ const SearchWrapper = styled.div`
   background: ${(props) => `${props.theme.colors.secondary}`};
   border-radius: 24px;
 
-  :focus-within {
-    outline: 3px solid black;
+  :focus-within,
+  :hover {
+    box-shadow: 0 0 4px black;
   }
 `
 
