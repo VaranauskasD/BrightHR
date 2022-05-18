@@ -1,8 +1,6 @@
 import React, { ReactNode, ChangeEvent } from 'react'
 import styled from 'styled-components'
 
-import { BsFillArrowLeftCircleFill } from 'react-icons/Bs'
-
 import { Filter } from '../Filter'
 
 export interface MenuProps {
@@ -47,19 +45,10 @@ const StyledButton = styled.button`
   }
 `
 
-const StyledArrowIcon = styled(BsFillArrowLeftCircleFill)`
-  min-height: 24px;
-  min-width: 24px;
-  color: ${(props) => `${props.theme.colors.secondary}`};
-`
-
 export const Menu = (props: MenuProps) => {
   return (
     <MenuWrapper>
       <StyledMenu>
-        <StyledButton type="button" aria-label="Back">
-          <StyledArrowIcon />
-        </StyledButton>
         <FilterWrapper>
           <Filter handleChange={props.handleChange} />
         </FilterWrapper>

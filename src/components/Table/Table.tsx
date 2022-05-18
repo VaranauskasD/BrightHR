@@ -1,4 +1,4 @@
-import React, { useEffect, useState, MouseEvent } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import {
@@ -134,9 +134,7 @@ const StyledArrowDownIcon = styled(AiOutlineArrowDown)`
 
 export const Table = (props: TableProps) => {
   const [tableData, setTableData] = useState<DataFile[]>([])
-  const [prevFolderDataStack, setPrevFolderDataStack] = useState<DataFile[][]>(
-    []
-  )
+  const [currentFolderData, setCurrentFolderData] = useState<DataFile[]>([])
   const [sortKeys, setSortKeys] = useState<number[]>([1, 0, 0, 0])
   const [nameDescending, setNameDescending] = useState<boolean>(true)
   const [typeDescending, setTypeDescending] = useState<boolean>(true)
@@ -145,19 +143,21 @@ export const Table = (props: TableProps) => {
 
   useEffect(() => {
     sortByName(props.data, true)
+    setCurrentFolderData(props.data)
     setTableData(props.data)
   }, [])
 
   useEffect(() => {
-    const filteredData = props.data.filter((file) =>
+    const filteredData = currentFolderData.filter((file) =>
       file.name.toLocaleLowerCase().includes(props.filter || '')
     )
-
     sortByName(filteredData, true)
     setTableData(filteredData)
   }, [props.filter])
 
-  const handleFolderClick = (event: MouseEvent<Element, MouseEvent>) => {
+  const handleFolderClick = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
     const target = event.target as HTMLElement
     const folderName = target.innerText
 
@@ -165,9 +165,7 @@ export const Table = (props: TableProps) => {
       (file) => file.name === folderName
     )?.files
 
-    const updatedStack = prevFolderDataStack
-    updatedStack.push(tableData)
-    setPrevFolderDataStack(updatedStack)
+    setCurrentFolderData(subFolderData || [])
 
     setTableData(subFolderData || [])
   }

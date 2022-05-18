@@ -7,16 +7,16 @@ import Image from 'next/image'
 import { Dashboard, DashboardProps, DataFile } from '../components'
 import { AnyRecord } from 'dns'
 
+const DashboardWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`
+
 const Home: NextPage<{ dashboard: DashboardProps }> = (props: {
   dashboard: DashboardProps
 }) => {
-  const DashboardWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  `
-
   return (
     <React.Fragment>
       <Head>
