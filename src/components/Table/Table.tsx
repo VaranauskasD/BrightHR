@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/Ai'
+import {
+  AiOutlineArrowDown,
+  AiOutlineArrowUp,
+  AiFillFile,
+  AiFillFolder,
+} from 'react-icons/Ai'
 
 import { DataFile } from '../types'
 import { type } from 'os'
@@ -17,6 +22,8 @@ const StyledTable = styled.table`
   padding: 8px;
   padding-top: 24px;
   width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
 `
 
 const StyledCaption = styled.caption`
@@ -26,17 +33,16 @@ const StyledCaption = styled.caption`
 
 const StyledTableHead = styled.thead`
   height: 100%;
-  background: ${(props) => `${props.theme.colors.tertiary}`};
   margin: 4px 0;
 `
 
 const StyledTableHeadRow = styled.tr`
-  display: flex;
-  justify-content: space-between;
+  display: table-row;
+  background: ${(props) => `${props.theme.colors.tertiary}`};
 `
 
 const StyledTableBodyRow = styled.tr<{ $key: number }>`
-  display: flex;
+  display: table-row;
   justify-content: space-between;
   background: ${(props) =>
     props.$key % 2
@@ -46,10 +52,10 @@ const StyledTableBodyRow = styled.tr<{ $key: number }>`
 
 const StyledTableHeader = styled.th`
   width: 100%;
+  min-width: 100px;
   min-height: 32px;
-  display: flex;
+  display: table-cell;
   align-items: center;
-  justify-content: space-between;
 
   :focus-within {
     box-shadow: 0 0 4px black;
@@ -61,11 +67,14 @@ const StyledTableHeader = styled.th`
   }
 `
 
-const TableButton = styled.button`
+const TableHeaderButton = styled.button`
   width: 100%;
   display: flex;
-  align-items: center;
+  padding: 8px;
+  margin: 0px;
+  font-size: 16px;
   justify-content: space-between;
+  align-items: center;
   background: none;
   border: none;
   outline: none;
@@ -78,11 +87,37 @@ const StyledTableBody = styled.tbody`
 
 const StyledTableCell = styled.td`
   width: 100%;
+  min-width: 100px;
   min-height: 32px;
   padding: 8px;
-  display: flex;
+  display: table-cell;
   align-items: center;
+`
+
+const TableButton = styled.button`
+  padding: 0;
+  margin: 0px;
+  font-size: 16px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: underline;
+`
+
+const StyledFileIcon = styled(AiFillFile)`
+  margin: 0 4px;
+  min-width: 16px;
+  min-height: 16px;
+`
+
+const StyledFolderIcon = styled(AiFillFolder)`
+  margin: 0 4px;
+  min-width: 16px;
+  min-height: 16px;
 `
 
 const StyledArrowUpIcon = styled(AiOutlineArrowUp)`
@@ -213,7 +248,17 @@ export const Table = (props: TableProps) => {
         data-testid={`${data.name}-${key}`}
       >
         <StyledTableCell data-testid={`cell-${data.name}-${key}`}>
-          {data.name ? data.name : 'Missing Name'}
+          {data.type === 'folder' ? (
+            <TableButton>
+              <StyledFolderIcon />
+              <span>{data.name ? data.name : 'Missing Name'}</span>
+            </TableButton>
+          ) : (
+            <React.Fragment>
+              <StyledFileIcon />
+              <span>{data.name ? data.name : 'Missing Name'}</span>
+            </React.Fragment>
+          )}
         </StyledTableCell>
         <StyledTableCell>
           {data.type ? data.type : 'Missing Type'}
@@ -243,7 +288,7 @@ export const Table = (props: TableProps) => {
                 : 'none'
             }
           >
-            <TableButton
+            <TableHeaderButton
               type="button"
               id="ColNameSortButton"
               data-testid="ColNameSortButton"
@@ -260,7 +305,7 @@ export const Table = (props: TableProps) => {
               ) : (
                 <React.Fragment />
               )}
-            </TableButton>
+            </TableHeaderButton>
           </StyledTableHeader>
           <StyledTableHeader
             id="ColType"
@@ -272,7 +317,7 @@ export const Table = (props: TableProps) => {
                 : 'none'
             }
           >
-            <TableButton
+            <TableHeaderButton
               type="button"
               id="ColTypeSortButton"
               data-testid="ColTypeSortButton"
@@ -289,7 +334,7 @@ export const Table = (props: TableProps) => {
               ) : (
                 <React.Fragment />
               )}
-            </TableButton>
+            </TableHeaderButton>
           </StyledTableHeader>
           <StyledTableHeader
             id="ColDate"
@@ -301,7 +346,7 @@ export const Table = (props: TableProps) => {
                 : 'none'
             }
           >
-            <TableButton
+            <TableHeaderButton
               type="button"
               id="ColDateSortButton"
               data-testid="ColDateSortButton"
@@ -318,7 +363,7 @@ export const Table = (props: TableProps) => {
               ) : (
                 <React.Fragment />
               )}
-            </TableButton>
+            </TableHeaderButton>
           </StyledTableHeader>
           <StyledTableHeader
             id="ColSize"
@@ -330,7 +375,7 @@ export const Table = (props: TableProps) => {
                 : 'none'
             }
           >
-            <TableButton
+            <TableHeaderButton
               type="button"
               id="ColSizeSortButton"
               data-testid="ColSizeSortButton"
@@ -347,7 +392,7 @@ export const Table = (props: TableProps) => {
               ) : (
                 <React.Fragment />
               )}
-            </TableButton>
+            </TableHeaderButton>
           </StyledTableHeader>
         </StyledTableHeadRow>
       </StyledTableHead>
