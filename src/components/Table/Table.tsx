@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/Ai'
 
 import { DataFile } from '../types'
+import { type } from 'os'
 
 interface TableProps {
   data: DataFile[]
@@ -43,7 +44,7 @@ const StyledTableBodyRow = styled.tr<{ $key: number }>`
 
 const StyledTableHeader = styled.th`
   width: 100%;
-  height: 32px;
+  min-height: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,6 +57,7 @@ const TableButton = styled.button`
   justify-content: space-between;
   background: none;
   border: none;
+  cursor: pointer;
 `
 
 const StyledTableBody = styled.tbody`
@@ -64,7 +66,7 @@ const StyledTableBody = styled.tbody`
 
 const StyledTableCell = styled.td`
   width: 100%;
-  height: 32px;
+  min-height: 32px;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -81,10 +83,106 @@ const StyledArrowDownIcon = styled(AiOutlineArrowDown)`
 
 export const Table = (props: TableProps) => {
   const [tableData, setTableData] = useState<DataFile[]>([])
+  const [sortKeys, setSortKeys] = useState<number[]>([1, 0, 0, 0])
+  const [nameAscending, setNameAscending] = useState<boolean>(true)
+  const [typeAscending, setTypeAscending] = useState<boolean>(true)
+  const [dateAscending, setDateAscending] = useState<boolean>(true)
+  const [sizeAscending, setSizeAscending] = useState<boolean>(true)
 
   useEffect(() => {
+    sortByName(props.data, true)
     setTableData(props.data)
   }, [])
+
+  const sortByName = (data: DataFile[], ascending: boolean) => {
+    const sortData = data
+
+    ascending
+      ? sortData.sort((file_one, file_two) =>
+          file_one.name.localeCompare(file_two.name)
+        )
+      : sortData.sort((file_one, file_two) =>
+          file_two.name.localeCompare(file_one.name)
+        )
+
+    setTableData(sortData)
+    setNameAscending(!nameAscending)
+
+    const keys = Array(4).fill(0)
+    keys[0] = 1
+    setSortKeys(keys)
+  }
+
+  const sortByType = (data: DataFile[], ascending: boolean) => {
+    const sortData = data
+
+    ascending
+      ? sortData.sort((file_one, file_two) => {
+          if (file_one.type === 'folder' && file_two.type !== 'folder')
+            return -1
+          if (file_two.type === 'folder' && file_one.type !== 'folder') return 1
+          return file_one.type.localeCompare(file_two.type)
+        })
+      : sortData.sort((file_one, file_two) => {
+          if (file_one.type === 'folder' && file_two.type !== 'folder') return 1
+          if (file_two.type === 'folder' && file_one.type !== 'folder')
+            return -1
+          return file_two.type.localeCompare(file_one.type)
+        })
+
+    setTableData(data)
+    setTypeAscending(!typeAscending)
+
+    const keys = Array(4).fill(0)
+    keys[1] = 1
+    setSortKeys(keys)
+  }
+
+  const sortByDate = (data: DataFile[], ascending: boolean) => {
+    const sortData = data
+
+    ascending
+      ? sortData.sort((file_one, file_two) => {
+          if (!file_one.added) return 1
+          if (!file_two.added) return -1
+          return file_one.added.localeCompare(file_two.added)
+        })
+      : sortData.sort((file_one, file_two) => {
+          if (!file_one.added) return 1
+          if (!file_two.added) return -1
+          return file_two.added.localeCompare(file_one.added)
+        })
+
+    setTableData(data)
+    setDateAscending(!dateAscending)
+
+    const keys = Array(4).fill(0)
+    keys[2] = 1
+    setSortKeys(keys)
+  }
+
+  const sortBySize = (data: DataFile[], ascending: boolean) => {
+    const sortData = data
+
+    ascending
+      ? sortData.sort((file_one, file_two) => {
+          if (!file_one.files) return 1
+          if (!file_two.files) return -1
+          return file_one.files.length - file_two.files.length
+        })
+      : sortData.sort((file_one, file_two) => {
+          if (!file_one.files) return 1
+          if (!file_two.files) return -1
+          return file_two.files.length - file_one.files.length
+        })
+
+    setTableData(data)
+    setSizeAscending(!sizeAscending)
+
+    const keys = Array(4).fill(0)
+    keys[3] = 1
+    setSortKeys(keys)
+  }
 
   const dataRow = (data: DataFile, key: number) => {
     return (
@@ -93,10 +191,10 @@ export const Table = (props: TableProps) => {
           {data.name ? data.name : 'Missing Name'}
         </StyledTableCell>
         <StyledTableCell>
-          {data.added ? data.added : 'Missing Date'}
+          {data.type ? data.type : 'Missing Type'}
         </StyledTableCell>
         <StyledTableCell>
-          {data.type ? data.type : 'Missing Type'}
+          {data.added ? data.added : 'Missing Date'}
         </StyledTableCell>
         <StyledTableCell>
           {data.files ? data.files.length : 'Missing size'}
@@ -115,18 +213,18 @@ export const Table = (props: TableProps) => {
               type="button"
               id="ColNameSortButton"
               aria-label="Sort by name"
+              onClick={() => sortByName(tableData, nameAscending)}
             >
               <span>Name</span>
-              <StyledArrowUpIcon />
-            </TableButton>
-          </StyledTableHeader>
-          <StyledTableHeader id="ColDate">
-            <TableButton
-              type="button"
-              id="ColDateSortButton"
-              aria-label="Sort by date"
-            >
-              <span>Date</span>
+              {sortKeys[0] ? (
+                nameAscending ? (
+                  <StyledArrowUpIcon />
+                ) : (
+                  <StyledArrowDownIcon />
+                )
+              ) : (
+                <React.Fragment />
+              )}
             </TableButton>
           </StyledTableHeader>
           <StyledTableHeader id="ColType">
@@ -134,8 +232,37 @@ export const Table = (props: TableProps) => {
               type="button"
               id="ColTypeSortButton"
               aria-label="Sort by type"
+              onClick={() => sortByType(tableData, typeAscending)}
             >
               <span>Type</span>
+              {sortKeys[1] ? (
+                typeAscending ? (
+                  <StyledArrowUpIcon />
+                ) : (
+                  <StyledArrowDownIcon />
+                )
+              ) : (
+                <React.Fragment />
+              )}
+            </TableButton>
+          </StyledTableHeader>
+          <StyledTableHeader id="ColDate">
+            <TableButton
+              type="button"
+              id="ColDateSortButton"
+              aria-label="Sort by date"
+              onClick={() => sortByDate(tableData, dateAscending)}
+            >
+              <span>Date</span>
+              {sortKeys[2] ? (
+                dateAscending ? (
+                  <StyledArrowUpIcon />
+                ) : (
+                  <StyledArrowDownIcon />
+                )
+              ) : (
+                <React.Fragment />
+              )}
             </TableButton>
           </StyledTableHeader>
           <StyledTableHeader id="ColSize">
@@ -143,8 +270,18 @@ export const Table = (props: TableProps) => {
               type="button"
               id="ColSizeSortButton"
               aria-label="Sort by size"
+              onClick={() => sortBySize(tableData, sizeAscending)}
             >
               <span>Size</span>
+              {sortKeys[3] ? (
+                sizeAscending ? (
+                  <StyledArrowUpIcon />
+                ) : (
+                  <StyledArrowDownIcon />
+                )
+              ) : (
+                <React.Fragment />
+              )}
             </TableButton>
           </StyledTableHeader>
         </StyledTableHeadRow>
