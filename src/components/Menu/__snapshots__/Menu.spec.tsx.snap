@@ -38,7 +38,7 @@ exports[`Menu renders correctly 1`] = `
           </svg>
           <input
             class="sc-hKMtZM lchXNC"
-            data-testid="Filter"
+            data-testid="filter"
             placeholder="Filter"
             type="text"
           />

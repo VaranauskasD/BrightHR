@@ -126,7 +126,7 @@ describe('Dashboard', () => {
   it('filters elements', async () => {
     const { asFragment } = render(<Dashboard {...daskboardProps} />)
 
-    fireEvent.change(screen.getByTestId('Filter'), {
+    fireEvent.change(screen.getByTestId('filter'), {
       target: { value: 'State' },
     })
 

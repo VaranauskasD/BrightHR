@@ -58,7 +58,7 @@ export const Filter = (props: FilterProps) => {
         type="text"
         placeholder="Filter"
         onChange={(event) => props.handleChange(event)}
-        data-testid="Filter"
+        data-testid="filter"
       ></StyledInput>
     </SearchWrapper>
   )
