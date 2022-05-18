@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, MouseEvent } from 'react'
 import styled from 'styled-components'
 
 import {
@@ -58,12 +58,12 @@ const StyledTableHeader = styled.th`
   align-items: center;
 
   :focus-within {
-    box-shadow: 0 0 4px black;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
   }
 
   :hover {
     background: ${(props) => `${props.theme.colors.primary}`};
-    box-shadow: 0 0 4px black;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
   }
 `
 
@@ -92,6 +92,10 @@ const StyledTableCell = styled.td`
   padding: 8px;
   display: table-cell;
   align-items: center;
+
+  :focus-within {
+    box-shadow: inset 0px 0px 4px black;
+  }
 `
 
 const TableButton = styled.button`
@@ -130,6 +134,9 @@ const StyledArrowDownIcon = styled(AiOutlineArrowDown)`
 
 export const Table = (props: TableProps) => {
   const [tableData, setTableData] = useState<DataFile[]>([])
+  const [prevFolderDataStack, setPrevFolderDataStack] = useState<DataFile[][]>(
+    []
+  )
   const [sortKeys, setSortKeys] = useState<number[]>([1, 0, 0, 0])
   const [nameDescending, setNameDescending] = useState<boolean>(true)
   const [typeDescending, setTypeDescending] = useState<boolean>(true)
@@ -149,6 +156,21 @@ export const Table = (props: TableProps) => {
     sortByName(filteredData, true)
     setTableData(filteredData)
   }, [props.filter])
+
+  const handleFolderClick = (event: MouseEvent<Element, MouseEvent>) => {
+    const target = event.target as HTMLElement
+    const folderName = target.innerText
+
+    const subFolderData = tableData.find(
+      (file) => file.name === folderName
+    )?.files
+
+    const updatedStack = prevFolderDataStack
+    updatedStack.push(tableData)
+    setPrevFolderDataStack(updatedStack)
+
+    setTableData(subFolderData || [])
+  }
 
   const sortByName = (data: DataFile[], descending: boolean) => {
     const sortData = data
@@ -249,13 +271,13 @@ export const Table = (props: TableProps) => {
       >
         <StyledTableCell data-testid={`cell-${data.name}-${key}`}>
           {data.type === 'folder' ? (
-            <TableButton>
-              <StyledFolderIcon />
+            <TableButton onClick={(event) => handleFolderClick(event)}>
+              <StyledFolderIcon aria-hidden="true" />
               <span>{data.name ? data.name : 'Missing Name'}</span>
             </TableButton>
           ) : (
             <React.Fragment>
-              <StyledFileIcon />
+              <StyledFileIcon aria-hidden="true" />
               <span>{data.name ? data.name : 'Missing Name'}</span>
             </React.Fragment>
           )}

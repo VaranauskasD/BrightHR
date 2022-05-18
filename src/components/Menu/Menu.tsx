@@ -1,6 +1,8 @@
 import React, { ReactNode, ChangeEvent } from 'react'
 import styled from 'styled-components'
 
+import { BsFillArrowLeftCircleFill } from 'react-icons/Bs'
+
 import { Filter } from '../Filter'
 
 export interface MenuProps {
@@ -21,6 +23,12 @@ const StyledMenu = styled.div`
   background: ${(props) => `${props.theme.colors.primary}`};
 `
 
+const FilterWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+`
+
 const Navigation = styled.div`
   display: flex;
   flex: 1;
@@ -29,26 +37,29 @@ const Navigation = styled.div`
 const StyledButton = styled.button`
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: none;
+  background: transparent;
   border: none;
+  outline: none;
+  cursor: pointer;
+  :focus-within,
+  :hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
 `
 
-const FilterWrapper = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: center;
+const StyledArrowIcon = styled(BsFillArrowLeftCircleFill)`
+  min-height: 24px;
+  min-width: 24px;
+  color: ${(props) => `${props.theme.colors.secondary}`};
 `
 
 export const Menu = (props: MenuProps) => {
   return (
     <MenuWrapper>
       <StyledMenu>
-        {/* <Navigation>
-          <StyledButton type="button" aria-label="Back">
-            Back
-          </StyledButton>
-        </Navigation> */}
+        <StyledButton type="button" aria-label="Back">
+          <StyledArrowIcon />
+        </StyledButton>
         <FilterWrapper>
           <Filter handleChange={props.handleChange} />
         </FilterWrapper>

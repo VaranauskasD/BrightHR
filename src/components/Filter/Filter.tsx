@@ -7,15 +7,14 @@ export interface FilterProps {
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
-const SearchWrapper = styled.div`
+const FilterWrapper = styled.div`
   display: flex;
   align-items: center;
   background: ${(props) => `${props.theme.colors.secondary}`};
   border-radius: 24px;
 
-  :focus-within,
-  :hover {
-    box-shadow: 0 0 4px black;
+  :focus {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   }
 `
 
@@ -52,7 +51,7 @@ const StyledInput = styled.input`
 
 export const Filter = (props: FilterProps) => {
   return (
-    <SearchWrapper>
+    <FilterWrapper>
       <StyledLabel>Filter files</StyledLabel>
       <StyledFilterIcon aria-hidden="true" />
       <StyledInput
@@ -61,7 +60,7 @@ export const Filter = (props: FilterProps) => {
         onChange={(event) => props.handleChange(event)}
         data-testid="filter"
       ></StyledInput>
-    </SearchWrapper>
+    </FilterWrapper>
   )
 }
 
