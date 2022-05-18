@@ -1,5 +1,195 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Dashboard filters elements 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bjUoiL hZENPh"
+  >
+    <div
+      class="sc-eCYdqJ bcsQqv"
+    >
+      <div
+        class="sc-jSMfEi gZdlnv"
+      >
+        <div
+          class="sc-ftvSup bwDZoA"
+        >
+          <div
+            class="sc-bczRLJ hbsOQq"
+          >
+            <label
+              class="sc-gsnTZi fDnEkf"
+            >
+              Filter files
+            </label>
+            <svg
+              aria-hidden="true"
+              class="sc-dkzDqf dMgMsg"
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+              />
+            </svg>
+            <input
+              class="sc-hKMtZM lchXNC"
+              data-testid="Filter"
+              placeholder="Filter"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-idiyUo bBaghw"
+    >
+      <table
+        aria-labelledby="caption"
+        class="sc-papXJ jrgirZ"
+      >
+        <caption
+          class="sc-jqUVSM gdSIHW"
+          id="caption"
+        >
+          Files
+        </caption>
+        <thead
+          class="sc-kDDrLX cTwLGi"
+        >
+          <tr
+            class="sc-iqcoie bWHMrz"
+          >
+            <th
+              aria-sort="descending"
+              class="sc-evZas cyKeCB"
+              id="ColName"
+            >
+              <button
+                aria-label="Sort by name"
+                class="sc-breuTD leTuEk"
+                data-testid="ColNameSortButton"
+                id="ColNameSortButton"
+                type="button"
+              >
+                <span>
+                  Name
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="sc-fEOsli lmlkec"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M862 465.3h-81c-4.6 0-9 2-12.1 5.5L550 723.1V160c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v563.1L255.1 470.8c-3-3.5-7.4-5.5-12.1-5.5h-81c-6.8 0-10.5 8.1-6 13.2L487.9 861a31.96 31.96 0 0 0 48.3 0L868 478.5c4.5-5.2.8-13.2-6-13.2z"
+                  />
+                </svg>
+              </button>
+            </th>
+            <th
+              aria-sort="none"
+              class="sc-evZas cyKeCB"
+              id="ColType"
+            >
+              <button
+                aria-label="Sort by type"
+                class="sc-breuTD leTuEk"
+                data-testid="ColTypeSortButton"
+                id="ColTypeSortButton"
+                type="button"
+              >
+                <span>
+                  Type
+                </span>
+              </button>
+            </th>
+            <th
+              aria-sort="none"
+              class="sc-evZas cyKeCB"
+              id="ColDate"
+            >
+              <button
+                aria-label="Sort by date"
+                class="sc-breuTD leTuEk"
+                data-testid="ColDateSortButton"
+                id="ColDateSortButton"
+                type="button"
+              >
+                <span>
+                  Date
+                </span>
+              </button>
+            </th>
+            <th
+              aria-sort="none"
+              class="sc-evZas cyKeCB"
+              id="ColSize"
+            >
+              <button
+                aria-label="Sort by size"
+                class="sc-breuTD leTuEk"
+                data-testid="ColSizeSortButton"
+                id="ColSizeSortButton"
+                type="button"
+              >
+                <span>
+                  Size
+                </span>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="sc-ksZaOG cCLelE"
+          data-testid="tablebody"
+        >
+          <tr
+            class="sc-crXcEl bcEKsS"
+            data-testid="Statements-0"
+          >
+            <td
+              class="sc-hAZoDl csgbVY"
+              data-testid="cell-Statements-0"
+            >
+              Statements
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              pdf
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              2017-02-15
+            </td>
+            <td
+              class="sc-hAZoDl csgbVY"
+            >
+              Missing size
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Dashboard renders correctly 1`] = `
 <DocumentFragment>
   <div
@@ -41,6 +231,7 @@ exports[`Dashboard renders correctly 1`] = `
             </svg>
             <input
               class="sc-hKMtZM lchXNC"
+              data-testid="Filter"
               placeholder="Filter"
               type="text"
             />

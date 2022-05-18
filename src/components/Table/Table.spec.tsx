@@ -1,4 +1,4 @@
-import { screen, fireEvent, waitFor } from '@testing-library/react'
+import { screen, fireEvent } from '@testing-library/react'
 
 import { customRender as render } from '../../utils/test'
 import { Table, TableProps } from './Table'

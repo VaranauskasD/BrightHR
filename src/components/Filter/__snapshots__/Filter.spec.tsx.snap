@@ -29,6 +29,7 @@ exports[`Filter renders correctly 1`] = `
     </svg>
     <input
       class="sc-hKMtZM lchXNC"
+      data-testid="Filter"
       placeholder="Filter"
       type="text"
     />

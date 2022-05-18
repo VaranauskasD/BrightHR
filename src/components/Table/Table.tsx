@@ -97,7 +97,6 @@ export const Table = (props: TableProps) => {
   }, [])
 
   useEffect(() => {
-    console.log(props.filter)
     const filteredData = props.data.filter((file) =>
       file.name.toLocaleLowerCase().includes(props.filter || '')
     )

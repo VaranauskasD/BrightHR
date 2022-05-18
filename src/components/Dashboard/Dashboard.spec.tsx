@@ -1,3 +1,4 @@
+import { screen, fireEvent } from '@testing-library/react'
 import { customRender as render } from '../../utils/test'
 import { Dashboard, DashboardProps } from './Dashboard'
 
@@ -119,6 +120,19 @@ describe('Dashboard', () => {
 
   it('renders correctly', async () => {
     const { asFragment } = render(<Dashboard {...daskboardProps} />)
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it('filters elements', async () => {
+    const { asFragment } = render(<Dashboard {...daskboardProps} />)
+
+    fireEvent.change(screen.getByTestId('Filter'), {
+      target: { value: 'State' },
+    })
+
+    let expectedFirstElement = screen.getByTestId('cell-Statements-0')
+    let firstElement = screen.getByTestId('tablebody').firstChild?.firstChild
+    expect(expectedFirstElement).toEqual(firstElement)
     expect(asFragment()).toMatchSnapshot()
   })
 })
