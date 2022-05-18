@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, ChangeEvent, createRef } from 'react'
 import styled from 'styled-components'
 
 import { DataFile } from '../types'
@@ -32,11 +32,17 @@ const StyledContent = styled.div`
 `
 
 export const Dashboard = (props: DashboardProps) => {
+  const [filter, setFilter] = useState<string | undefined>()
+
+  const handleFilterChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setFilter(event.target.value.toLocaleLowerCase())
+  }
+
   return (
     <StyledDashboard>
-      <Menu>Test</Menu>
+      <Menu handleChange={handleFilterChange} />
       <StyledContent>
-        <Table data={props.data} />
+        <Table data={props.data} filter={filter} />
       </StyledContent>
     </StyledDashboard>
   )

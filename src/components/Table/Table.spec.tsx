@@ -116,6 +116,7 @@ describe('Table', () => {
           ],
         },
       ],
+      filter: '',
     }
   })
 

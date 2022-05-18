@@ -8,6 +8,7 @@ import { type } from 'os'
 
 export interface TableProps {
   data: DataFile[]
+  filter?: string
 }
 
 const StyledTable = styled.table`
@@ -94,6 +95,16 @@ export const Table = (props: TableProps) => {
     sortByName(props.data, true)
     setTableData(props.data)
   }, [])
+
+  useEffect(() => {
+    console.log(props.filter)
+    const filteredData = props.data.filter((file) =>
+      file.name.toLocaleLowerCase().includes(props.filter || '')
+    )
+
+    sortByName(filteredData, true)
+    setTableData(filteredData)
+  }, [props.filter])
 
   const sortByName = (data: DataFile[], descending: boolean) => {
     const sortData = data

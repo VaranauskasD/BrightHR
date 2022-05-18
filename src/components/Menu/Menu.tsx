@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { ReactNode, ChangeEvent } from 'react'
 import styled from 'styled-components'
 
 import { Filter } from '../Filter'
 
-interface MenuProps {}
+export interface MenuProps {
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void
+}
 
 const MenuWrapper = styled.div`
   display: flex;
@@ -48,7 +50,7 @@ export const Menu = (props: MenuProps) => {
           </StyledButton>
         </Navigation> */}
         <FilterWrapper>
-          <Filter />
+          <Filter handleChange={props.handleChange} />
         </FilterWrapper>
       </StyledMenu>
     </MenuWrapper>

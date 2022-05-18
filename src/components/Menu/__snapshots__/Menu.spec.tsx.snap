@@ -20,6 +20,7 @@ exports[`Menu renders correctly 1`] = `
             Filter files
           </label>
           <svg
+            aria-hidden="true"
             class="sc-dkzDqf dMgMsg"
             fill="none"
             height="1em"

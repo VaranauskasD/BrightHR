@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState, createRef, ChangeEvent } from 'react'
 import styled from 'styled-components'
 
 import { FiFilter } from 'react-icons/Fi'
 
-interface FilterProps {}
+export interface FilterProps {
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void
+}
 
 const SearchWrapper = styled.div`
   display: flex;
@@ -48,11 +50,18 @@ const StyledInput = styled.input`
 `
 
 export const Filter = (props: FilterProps) => {
+  const inputRef = createRef<HTMLInputElement>()
+
   return (
     <SearchWrapper>
       <StyledLabel>Filter files</StyledLabel>
-      <StyledFilterIcon />
-      <StyledInput type="text" placeholder="Filter"></StyledInput>
+      <StyledFilterIcon aria-hidden="true" />
+      <StyledInput
+        type="text"
+        placeholder="Filter"
+        onChange={(event) => props.handleChange(event)}
+        ref={inputRef}
+      ></StyledInput>
     </SearchWrapper>
   )
 }
