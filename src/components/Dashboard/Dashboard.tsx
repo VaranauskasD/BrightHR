@@ -26,7 +26,10 @@ const StyledDashboard = styled.div`
   background: ${(props) => `${props.theme.colors.secondary}`};
 `
 
-const StyledContent = styled.div``
+const StyledContent = styled.div`
+  overflow-y: scroll;
+  margin: 16px;
+`
 
 export const Dashboard = (props: DashboardProps) => {
   return (

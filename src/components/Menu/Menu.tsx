@@ -38,38 +38,7 @@ const FilterWrapper = styled.div`
   justify-content: center;
 `
 
-const StyledSubMenu = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
-`
-
-const SubMenuButton = styled.button`
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  background: none;
-  border: none;
-`
-
 export const Menu = (props: MenuProps) => {
-  // const SubMenu = () => {
-  //   return (
-  //     <StyledSubMenu>
-  //       <SubMenuButton type="button" aria-label="Name">
-  //         <span>Name</span>
-  //         <StyledArrowUpIcon />
-  //       </SubMenuButton>
-  //       <SubMenuButton type="button" aria-label="Size">
-  //         <span>Size</span>
-  //       </SubMenuButton>
-  //       <SubMenuButton type="button" aria-label="Date">
-  //         <span>Date</span>
-  //       </SubMenuButton>
-  //     </StyledSubMenu>
-  //   )
-  // }
-
   return (
     <MenuWrapper>
       <StyledMenu>
@@ -82,7 +51,6 @@ export const Menu = (props: MenuProps) => {
           <Filter />
         </FilterWrapper>
       </StyledMenu>
-      {/* <SubMenu /> */}
     </MenuWrapper>
   )
 }

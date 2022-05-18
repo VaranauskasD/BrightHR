@@ -34,13 +34,17 @@ const StyledFilterIcon = styled(FiFilter)`
 const StyledInput = styled.input`
   border-radius: 0 24px 24px 0;
   border: none;
-  min-width: 330px;
+  min-width: 240px;
   height: 100%;
   margin-left: 4px;
   padding-left: 4px;
   background: ${(props) => `${props.theme.colors.secondary}`};
   outline: none;
   border-left: 1px solid ${(props) => `${props.theme.colors.grey}`};
+
+  @media (min-width: ${(props) => `${props.theme.breakpoints.md}px`}) {
+    min-width: 330px;
+  }
 `
 
 export const Filter = (props: FilterProps) => {

@@ -1,1 +1,1 @@
-// export { customRender } from './test-utils'
+export { customRender } from './test-utils'

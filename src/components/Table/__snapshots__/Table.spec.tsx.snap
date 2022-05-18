@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders correctly 1`] = `
+<DocumentFragment>
+  <table
+    aria-labelledby="caption"
+    class="sc-bczRLJ gmOvJp"
+  >
+    <caption
+      class="sc-gsnTZi jmINyp"
+      id="caption"
+    >
+      Files
+    </caption>
+    <thead
+      class="sc-dkzDqf oORPV"
+    >
+      <tr
+        class="sc-hKMtZM cVghEq"
+      >
+        <th
+          aria-sort="descending"
+          class="sc-jSMfEi rZCU"
+          id="ColName"
+        >
+          <button
+            aria-label="Sort by name"
+            class="sc-gKXOVf swDVD"
+            id="ColNameSortButton"
+            type="button"
+          >
+            <span>
+              Name
+            </span>
+            <svg
+              aria-hidden="true"
+              class="sc-jqUVSM gBWJPk"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M862 465.3h-81c-4.6 0-9 2-12.1 5.5L550 723.1V160c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v563.1L255.1 470.8c-3-3.5-7.4-5.5-12.1-5.5h-81c-6.8 0-10.5 8.1-6 13.2L487.9 861a31.96 31.96 0 0 0 48.3 0L868 478.5c4.5-5.2.8-13.2-6-13.2z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColType"
+        >
+          <button
+            aria-label="Sort by type"
+            class="sc-gKXOVf swDVD"
+            id="ColTypeSortButton"
+            type="button"
+          >
+            <span>
+              Type
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColDate"
+        >
+          <button
+            aria-label="Sort by date"
+            class="sc-gKXOVf swDVD"
+            id="ColDateSortButton"
+            type="button"
+          >
+            <span>
+              Date
+            </span>
+          </button>
+        </th>
+        <th
+          aria-sort="none"
+          class="sc-jSMfEi rZCU"
+          id="ColSize"
+        >
+          <button
+            aria-label="Sort by size"
+            class="sc-gKXOVf swDVD"
+            id="ColSizeSortButton"
+            type="button"
+          >
+            <span>
+              Size
+            </span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-iBkjds cTRa-DO"
+    >
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Cost centres
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          csv
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-08-12
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Employee Handbook
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2017-01-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Expenses
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ hcWJXS"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Misc
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          folder
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing Date
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2
+        </td>
+      </tr>
+      <tr
+        class="sc-eCYdqJ bmVhaN"
+      >
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Public Holiday policy
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          pdf
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          2016-12-06
+        </td>
+        <td
+          class="sc-ftvSup jXKhkW"
+        >
+          Missing size
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

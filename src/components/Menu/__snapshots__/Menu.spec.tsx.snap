@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-eCYdqJ bcsQqv"
+  >
+    <div
+      class="sc-jSMfEi gZdlnv"
+    >
+      <div
+        class="sc-ftvSup bwDZoA"
+      >
+        <div
+          class="sc-bczRLJ hbsOQq"
+        >
+          <label
+            class="sc-gsnTZi fDnEkf"
+          >
+            Filter files
+          </label>
+          <svg
+            class="sc-dkzDqf dMgMsg"
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+            />
+          </svg>
+          <input
+            class="sc-hKMtZM lchXNC"
+            placeholder="Filter"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -6,7 +6,7 @@ import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/Ai'
 import { DataFile } from '../types'
 import { type } from 'os'
 
-interface TableProps {
+export interface TableProps {
   data: DataFile[]
 }
 
@@ -26,6 +26,7 @@ const StyledCaption = styled.caption`
 const StyledTableHead = styled.thead`
   height: 100%;
   background: ${(props) => `${props.theme.colors.tertiary}`};
+  margin: 4px 0;
 `
 
 const StyledTableHeadRow = styled.tr`
@@ -208,7 +209,16 @@ export const Table = (props: TableProps) => {
       <StyledCaption id="caption">Files</StyledCaption>
       <StyledTableHead>
         <StyledTableHeadRow>
-          <StyledTableHeader id="ColName">
+          <StyledTableHeader
+            id="ColName"
+            aria-sort={
+              sortKeys[0]
+                ? nameAscending
+                  ? 'ascending'
+                  : 'descending'
+                : 'none'
+            }
+          >
             <TableButton
               type="button"
               id="ColNameSortButton"
@@ -218,16 +228,25 @@ export const Table = (props: TableProps) => {
               <span>Name</span>
               {sortKeys[0] ? (
                 nameAscending ? (
-                  <StyledArrowUpIcon />
+                  <StyledArrowUpIcon aria-hidden="true" />
                 ) : (
-                  <StyledArrowDownIcon />
+                  <StyledArrowDownIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
               )}
             </TableButton>
           </StyledTableHeader>
-          <StyledTableHeader id="ColType">
+          <StyledTableHeader
+            id="ColType"
+            aria-sort={
+              sortKeys[1]
+                ? typeAscending
+                  ? 'ascending'
+                  : 'descending'
+                : 'none'
+            }
+          >
             <TableButton
               type="button"
               id="ColTypeSortButton"
@@ -237,16 +256,25 @@ export const Table = (props: TableProps) => {
               <span>Type</span>
               {sortKeys[1] ? (
                 typeAscending ? (
-                  <StyledArrowUpIcon />
+                  <StyledArrowUpIcon aria-hidden="true" />
                 ) : (
-                  <StyledArrowDownIcon />
+                  <StyledArrowDownIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
               )}
             </TableButton>
           </StyledTableHeader>
-          <StyledTableHeader id="ColDate">
+          <StyledTableHeader
+            id="ColDate"
+            aria-sort={
+              sortKeys[2]
+                ? dateAscending
+                  ? 'ascending'
+                  : 'descending'
+                : 'none'
+            }
+          >
             <TableButton
               type="button"
               id="ColDateSortButton"
@@ -256,16 +284,25 @@ export const Table = (props: TableProps) => {
               <span>Date</span>
               {sortKeys[2] ? (
                 dateAscending ? (
-                  <StyledArrowUpIcon />
+                  <StyledArrowUpIcon aria-hidden="true" />
                 ) : (
-                  <StyledArrowDownIcon />
+                  <StyledArrowDownIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
               )}
             </TableButton>
           </StyledTableHeader>
-          <StyledTableHeader id="ColSize">
+          <StyledTableHeader
+            id="ColSize"
+            aria-sort={
+              sortKeys[3]
+                ? sizeAscending
+                  ? 'ascending'
+                  : 'descending'
+                : 'none'
+            }
+          >
             <TableButton
               type="button"
               id="ColSizeSortButton"
@@ -275,9 +312,9 @@ export const Table = (props: TableProps) => {
               <span>Size</span>
               {sortKeys[3] ? (
                 sizeAscending ? (
-                  <StyledArrowUpIcon />
+                  <StyledArrowUpIcon aria-hidden="true" />
                 ) : (
-                  <StyledArrowDownIcon />
+                  <StyledArrowDownIcon aria-hidden="true" />
                 )
               ) : (
                 <React.Fragment />
